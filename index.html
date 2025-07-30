@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exam Submission</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h2>Online Exam</h2>
+
+  <div class="container">
+    <button id="deylayBtn">Start Exam</button>
+
+  </div>
+
+   <br>
+  <a href="/delay.html"> submit exam...</a>
+
+
+  <!-- Popup Modal-02 -->
+  <div id="popupModal1" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeBtn1">&times;</span>
+      <img src="./WhatsApp Image 2025-07-28 at 11.42.30 AM.jpeg" alt="">
+      <h1>Important Update!!</h1>
+      <h4 style="color: rgb(37, 37, 37);">Due to timing concerns outside of India, the exam start time has been adjusted.
+         The exam will now begin at 8:30 AM instead of 6:00 PM.</h4>
+      <h3 style="color: rgb(24, 24, 24);"> Thank you!</h3>
+      <a href="index.html" class="home-button">Go Back Home</a>
+    </div>
+  </div>
+
+
+  <script>
+    const modal1 = document.getElementById("popupModal1");
+    const submitBtn1 = document.getElementById("deylayBtn");
+    const closeBtn1 = document.getElementById("closeBtn1");
+
+    submitBtn1.onclick = function () {
+      modal1.style.display = "block";
+    }
+
+    closeBtn1.onclick = function () {
+      modal1.style.display = "none";
+    }
+
+    // Optional: Close when clicking outside the modal
+    window.onclick = function (event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
